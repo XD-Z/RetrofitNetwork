@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RetrofitNetwork</string>
+    <string name="get_weather_data_string_one">获取头像 map方式</string>
+    <string name="get_weather_data_string1">get请求天气</string>
+    <string name="get_weather_data_string2">post请求天气</string>
+    <string name="get_weather_data_string3">单个文件(图片)/更换头像</string>
+    <string name="get_weather_data_string4">多个文件(多图)</string>
+    <string name="get_weather_data_string5">普通List/数组</string>
+</resources>

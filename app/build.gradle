@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.dogal.retrofitnetwork"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:design:29.0.2'
+    // retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    // rxjava
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.1'
+    // rxandroid
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    // 配合Rxjava 使用
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    // 转换器 将结果通过gson将json串转换为model
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    //log打印
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    //superTextView https://github.com/lygttpod/SuperTextView
+    implementation 'com.github.lygttpod:SuperTextView:2.4.2'
+    //弹窗库 https://github.com/li-xiaojun/XPopup
+    implementation 'com.lxj:xpopup:1.8.10'
+    //图片选择 https://github.com/LuckSiege/PictureSelector
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.4.3'
+
+
+}

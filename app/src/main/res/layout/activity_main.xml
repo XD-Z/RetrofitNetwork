@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity">
+
+    <include layout="@layout/base_title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/head_pic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_80"
+                android:layout_marginTop="@dimen/dp_10"
+                android:src="@mipmap/head" />
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/weather_btn_one"
+                android:layout_width="match_parent"
+                app:sUseRipple="true"
+                android:background="@color/white"
+                android:layout_height="@dimen/dp_48"
+                android:layout_marginTop="@dimen/dp_10"
+                app:sCenterTextColor="@color/text_color0"
+                app:sCenterTextString="@string/get_weather_data_string_one" />
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/weather_btn11"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                app:sCenterTextColor="@color/text_color0"
+                app:sCenterTextString="@string/get_weather_data_string1" />
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/weather_btn2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                app:sCenterTextColor="@color/text_color0"
+                app:sCenterTextString="@string/get_weather_data_string2" />
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/weather_btn3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                app:sCenterTextColor="@color/text_color0"
+                app:sCenterTextString="@string/get_weather_data_string3" />
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/weather_btn4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                app:sCenterTextColor="@color/text_color0"
+                app:sCenterTextString="@string/get_weather_data_string4" />
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/weather_btn5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                app:sCenterTextColor="@color/text_color0"
+                app:sCenterTextString="@string/get_weather_data_string5" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_title"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="8dp"
+                android:overScrollMode="never" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>
