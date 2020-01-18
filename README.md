@@ -15,3 +15,4 @@ Retrofit网络请求，精简详细版
 2.3 超时设置
 
 项目中应用到的三方库superTextView ,XPopup,PictureSelector 可参考demo中的链接
+适合新手直接上手使用
